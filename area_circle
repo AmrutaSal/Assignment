@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class area_circle{
+    public static void main(String[] args) 
+    {
+    Scanner sc=new Scanner(System.in);
+    double r,area,perimeter;
+    System.out.println("Enter the Radius =");
+    r=sc.nextInt();
+    area=2* Math.PI*r;
+    System.out.println("Area of circle ="+area);
+    perimeter=Math.PI *r*r;
+    System.out.println("Perimeter of circle ="+perimeter); 
+ } 
+} 
+
+
+
+
+Output-
+Enter the radius=5
+Area of circle =31.4192653589793
+Perimeter of circle =78.5381633974483
+
+
