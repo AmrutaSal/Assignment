@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class area_rectangle{
+
+    public static void main(String[] args) 
+
+    {
+
+    Scanner sc=new Scanner(System.in);
+
+    int l,b,area,perimeter;
+
+    System.out.println("Enter the length =");
+    
+    l=sc.nextInt();
+    
+    System.out.println("Enter the breadth =");
+    
+    b=sc.nextInt();
+   
+    area=l*b;
+
+    System.out.println("Area of rectangle ="+area);
+
+    perimeter=2* (l+b);
+
+    System.out.println("Perimeter of circle ="+perimeter); 
+
+ } 
+
+} 
+
+
+
+
+Output-
+Enter the length =
+10
+Enter the breadth=
+20
+Area of rectangle =200
+Perimeter of rectangle =60
