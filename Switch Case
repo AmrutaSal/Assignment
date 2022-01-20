@@ -1,0 +1,290 @@
+//WAP to accept choice from user and accordingly display the output
+
+1: EVEN ODD
+
+2:Greater between 3 NO
+
+3:Vowel or not
+
+4:accept a no and display the day (1:Monday 2: Tuesday .....7: Sunday)
+
+5:to accept a no from user if no is divible by 5 than display the 
+
+
+import java.util.Scanner;
+
+public class nestedif {
+
+	public static void main(String[] args) 	{
+
+	      Scanner sc=new Scanner(System.in);
+
+        int val,num,x,y,z;
+
+        System.out.println("Enter the case number");
+
+       // sc=new Scanner(System.in);
+
+        val =sc.nextInt();
+
+        switch (val)
+
+        {
+
+        case 1:
+
+        	       System.out.println("Enter the number");
+
+        	        num =sc.nextInt();
+
+                   if(num % 2==0)
+
+	                	{
+
+			         System.out.println("Number is even="+num);
+
+		                 }
+
+		           else
+
+		              {
+
+		             System.out.println("number is odd="+num);
+
+		             }
+
+                   break;
+
+        case 2:          
+
+        	       System.out.println("Enter first number x=");
+
+                   x=sc.nextInt();
+
+                   System.out.println("Enter second number y=");
+
+                   y=sc.nextInt();
+
+                   System.out.println("Enter third number x=");
+
+                   z=sc.nextInt();
+
+                   if(x > y && x >z)
+
+                    {
+
+            	        System.out.println("greatest number is :"+x);
+
+                     }
+
+                   else if(y>z)
+
+                   {
+
+                	   System.out.println("greatest number is :"+y);
+
+                   }
+
+                   else
+
+                   {
+
+                	   System.out.println("greatest number is :"+z);
+
+                   }
+
+                   break;
+
+        case 3:
+
+        	       char alpha;
+
+        	       System.out.println("Enter the charcter");
+
+        	       alpha=sc.next().charAt(0);
+
+        	       if(alpha == 'a')
+
+        	       {
+
+        	    	   System.out.println("It is vowel="+alpha);
+
+        	       }
+
+        	       else if(alpha == 'e')
+
+        	       {
+
+        	    	   System.out.println("It is vowel="+alpha);
+
+        	       }
+
+        	       else if(alpha == 'i')
+
+        	       {
+
+        	    	   System.out.println("It is vowel"+alpha);
+
+        	       }
+
+        	       else if (alpha == 'o')
+
+        	       {
+
+        	    	   System.out.println("It is vowel"+alpha);
+
+        	       }
+
+        	       else if (alpha == 'u')
+
+        	       {
+
+        	    	   System.out.println("It is vowel"+alpha);
+
+        	       }
+
+        	       else
+
+        	       {
+
+        	    	   System.out.println("It is not vowel= " +alpha);
+
+        	       }
+
+        	       break;
+
+        case 4 :
+
+        	      int weekday;
+
+        	      System.out.println("Enter the weekday no");
+
+        	      weekday=sc.nextInt();
+
+        	      if(weekday ==1)
+
+        	      {
+
+        	    	  System.out.println("Monday");
+
+        	      }
+
+        	      else if(weekday ==2)
+
+        	      {
+
+        	    	  System.out.println("Tuesday");
+
+        	      }
+
+        	      else if(weekday ==3)
+
+        	      {
+
+        	    	  System.out.println("Wednesday");
+
+        	      }
+
+        	      else if(weekday ==4)
+
+        	      {
+
+        	    	  System.out.println("Thursday");
+
+        	      }
+
+        	      else if(weekday ==5)
+
+        	      {
+
+        	    	  System.out.println("Friday");
+
+        	      }
+
+        	      else if(weekday ==6)
+
+        	      {
+
+        	    	  System.out.println("Saturday");
+
+        	      }
+
+        	      else if(weekday ==7)
+
+        	      {
+
+        	    	  System.out.println("Sunday");
+
+        	      }
+
+        	      else
+
+        	      {
+
+        	    	  System.out.println("Please enter weekday no in between 1 to 7");
+
+        	      }
+
+                 break;
+
+        case 5:
+
+        	   int a;
+
+        	   System.out.println("Enter the number");
+
+        	   a=sc.nextInt();
+
+        	   if(a%5==0)
+
+        	   {
+
+        		   System.out.println("It's Number is divisible by 5 ");
+
+        	   }
+
+        	   else
+
+        	   {
+
+        		   System.out.println("It's Number is not divisible by 5 ");
+
+        	   }
+
+        	   break;     	
+
+       default :
+
+       {
+
+    	   System.out.println("Invalid choice");
+
+       }
+
+        	       
+
+        } 
+
+               
+
+        
+
+	}
+
+}
+
+
+
+
+
+
+Output-
+Enter the case Number 
+2
+Enter First number x=
+10
+Enter Second number y=
+20
+Enter third number z=
+60
+greatest number is :60
