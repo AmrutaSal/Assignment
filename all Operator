@@ -1,0 +1,101 @@
+import java.util.Scanner;
+
+public class operator {
+	public static void main(String[] args) 
+	{
+      Scanner sc=new Scanner(System.in);
+      int n1,n2,a,b;
+      System.out.println("Enter the first number n1 :");
+      n1=sc.nextInt();
+      System.out.println("Enter the second number n2 :");
+      n2=sc.nextInt();
+      System.out.println("    # Arithmetic Operator #");
+      System.out.println("Sum of : n1+n2 = "+(n1+n2));
+      System.out.println("Sub of : n1-n2 = "+(n1-n2));
+      System.out.println("Mul of : n1*n2 = "+(n1*n2));
+      System.out.println("Div of : n1/n2 = "+(n1/n2));
+      System.out.println("Mod of : n1%n2 = "+(n1%n2));
+      System.out.println("   ");
+      System.out.println("     # Assignment Operator #");
+      System.out.println("Enter the first number a :");
+      a=sc.nextInt();
+      System.out.println("Enter the second number b :");
+      b=sc.nextInt();
+      System.out.println("Value of a+=b :" +(b+=a));
+      System.out.println("Value of b-=a :"+(a-=b));
+      System.out.println("Value of b*=a :"+(b*=a));
+      System.out.println("Value of b/=a :"+(b/=a));
+      System.out.println("Value of b%=a :"+(b%=a));
+      System.out.println("   ");
+      System.out.println("    # Relational Operator #");
+      System.out.println(" n1 > n2  :"+ (n1>n2));
+      System.out.println(" n1 >= n2 :"+ (n1>=n2));
+      System.out.println(" n1 < n2  :"+ (n1<n2));
+      System.out.println(" n1 <= n2 :"+ (n1<n2));
+      System.out.println(" n1 == n2 :"+ (n1==n2));
+      System.out.println(" n1 != n2 :"+ (n1!=n2));
+      System.out.println("   ");
+      System.out.println("    # Logical Operator #");
+      System.out.println(" n1>2 && n2<10 :"+ (n1>2 && n2<10));
+      System.out.println(" n1>5 || n2>11 :"+ (n1>5 || n2>11));
+      System.out.println(" !(n1<25 && n2>10) :"+ !(n1<25 && n2>10));
+      System.out.println("   ");
+      System.out.println("    # Bitwise Operator #");
+      System.out.println("n1&n2  : "+(n1&n2));
+      System.out.println("n1|n2  : "+(n1|n2));
+      System.out.println("~n1    : "+(~n1));
+      System.out.println("n1^n2  : "+(n1^n2));
+      System.out.println("n1>>n2 : "+(n1>>n2));
+      System.out.println("n1<<n2 :"+(n1<<n2));
+
+      
+
+
+}
+}
+
+
+
+// Output :
+/*Enter the first number n1 :
+5
+Enter the second number n2 :
+7
+    # Arithmetic Operator #
+Sum of : n1+n2 = 12
+Sub of : n1-n2 = -2
+Mul of : n1*n2 = 35
+Div of : n1/n2 = 0
+Mod of : n1%n2 = 5
+   
+     # Assignment Operator #
+Enter the first number a :
+2
+Enter the second number b :
+3
+Value of a+=b :5
+Value of b-=a :-3
+Value of b*=a :-15
+Value of b/=a :5
+Value of b%=a :2
+   
+    # Relational Operator #
+ n1 > n2  :false
+ n1 >= n2 :false
+ n1 < n2  :true
+ n1 <= n2 :true
+ n1 == n2 :false
+ n1 != n2 :true
+   
+    # Logical Operator #
+ n1>2 && n2<10 :true
+ n1>5 || n2>11 :false
+ !(n1<25 && n2>10) :true
+   
+    # Bitwise Operator #
+n1&n2  : 5
+n1|n2  : 7
+~n1    : -6
+n1^n2  : 2
+n1>>n2 : 0
+n1<<n2 :640*/
